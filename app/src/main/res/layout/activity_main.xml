@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidyasagarnaidum.otpsend.MainActivity">
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/button4"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter mobile number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_below="@+id/mobile"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="40dp"
+        android:text="send OTP"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:ems="10"
+        android:hint="verify"
+        android:maxLength="6"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/otp"
+        android:layout_alignStart="@+id/otp"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="29dp"
+        android:text="Verify"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mobile"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="27dp"
+        android:onClick="KnowUser"
+        android:text="Know User Number"
+        android:textAllCaps="false" />
+</RelativeLayout>
